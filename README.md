@@ -1,2 +1,4 @@
 # lammps_scripts
-These are some lammps scripts
+
+These are some lammps scripts.
+
