@@ -1,14 +1,14 @@
 # ---- initialize simulations
 clear
-units metal
-dimension 3
-boundary p p p
-atom_style charge
-atom_modify map array
+units metal                   # metal units
+dimension 3                   # 3D
+boundary p p p                # periodic boundary conditions in all directions.
+atom_style charge             # buckingham requires charge on the atom
+atom_modify map array         # ???
 # ---- create atoms
-read_data lammps.structure
+read_data lammps.structure    # reading in simulation box and atomic poistions
 # ---- define interatomic potential
-include potential.mod
+include potential.mod         # potential file
 
 # ---- define settings
 compute eng all pe/atom
